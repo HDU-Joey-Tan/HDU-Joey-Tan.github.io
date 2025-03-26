@@ -12,7 +12,7 @@
 <body>
 <header>
   <nav>
-    <div class="logo">沐上</div>
+    <div class="logo">静水流深</div>
     <div class="nav-links">
       <a href="#about">关于</a>
       <a href="#grade">绩点</a>
@@ -116,15 +116,15 @@
   <div class="container">
     <h2>我的项目</h2>
     <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-image" id="1"></div>
-        <div class="project-details">
-          <h3>基于知识图谱的大模型智慧教师系统</h3>
-          <p>通过将知识图谱作为知识库导入大模型，利用RAG技术赋能智慧教学。</p>
-          <p>技术栈: LLM、Neo4j、RAG</p>
+        <div class="project-card modal-trigger">
+          <div class="project-image" id="1"></div>
+          <div class="project-details">
+            <h3>基于知识图谱的大模型智慧教师系统</h3>
+            <p>通过将知识图谱作为知识库导入大模型，利用RAG技术赋能智慧教学。</p>
+            <p>技术栈: LLM、Neo4j、RAG</p>
+          </div>
         </div>
-      </div>
-      <div class="project-card">
+      <div class="project-card" onclick="window.open('https://gitlab.eduxiji.net/T202410336994295/project2608128-273615', '_blank')">
         <div class="project-image" id="2"></div>
         <div class="project-details">
           <h3>图形化BPF交互与容器观测系统</h3>
@@ -132,7 +132,7 @@
           <p>技术栈: eBPF、Golang、Docker</p>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" onclick="window.open('https://github.com/HDU-Joey-Tan/HDU-Joey-Tan.github.io', '_blank')">
         <div class="project-image" id="3"></div>
         <div class="project-details">
           <h3>静水流深个人主页</h3>
@@ -149,7 +149,7 @@
   <div class="modal-content">
     <span class="close-button">&times;</span>
     <h2>项目详情</h2>
-    <p>这里是项目的详细信息。</p>
+    <iframe src="Nexus.pdf" width="100%" height="800px"></iframe>
   </div>
 </div>
 
@@ -157,14 +157,14 @@
 <div id="grade-modal" class="modal">
   <div class="modal-content">
     <span class="close-button">&times;</span>
-    <div id="grade-chart" style="width: 100%; height: 400px;"></div>
+    <div id="grade-chart" style="width: 100%; height: 800px;"></div>
   </div>
 </div>
 
 <footer>
   <div class="container">
     <p>&copy; 2025 谭文轩的个人网站. 保留所有权利.</p>
-    <div class="social-links"></div>
+<!--    <div class="social-links"></div>-->
     <p>邮箱: joeytancn@outlook.com</p>
   </div>
 </footer>

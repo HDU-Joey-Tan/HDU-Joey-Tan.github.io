@@ -292,6 +292,24 @@ footer {
     to { transform: translateY(0); opacity: 1; }
 }
 
+@keyframes fadeOut {
+    from { background-color: rgba(0, 0, 0, 0.5); }
+    to { background-color: rgba(0, 0, 0, 0); }
+}
+
+@keyframes slideOut {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-50px); opacity: 0; }
+}
+
+.modal.closing {
+    animation: fadeOut 0.5s forwards;
+}
+
+.modal .modal-content.closing {
+    animation: slideOut 0.5s forwards;
+}
+
 .project-image[id="1"]{
     background-image: url('智慧教师.png');
     background-size: cover;
