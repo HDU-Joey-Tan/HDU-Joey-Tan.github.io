@@ -1,8 +1,174 @@
-<p>Hello 大家好</p>
-<p>我是谭文轩，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!-- 文件：index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>沐上的个人主页</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">沐上</div>
+    <div class="nav-links">
+      <a href="#about">关于</a>
+      <a href="#grade">绩点</a>
+      <a href="#projects">项目</a>
+    </div>
+  </nav>
+</header>
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+<section class="hero">
+  <div class="container">
+    <h1>静 水 流 深</h1>
+    <p>这里是谭文轩的个人主页</p>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <h2>关于我</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>杭电计算机26届毕业生</p>
+        <p>业余羽毛球选手 业余摄影爱好者</p>
+        <p>热爱编程，热爱生活</p>
+        <p>电子产品狂热爱好者</p>
+      </div>
+      <div class="about-image">
+        <img src="icon.jpg" alt="谭文轩" class="about-image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="grade" class="grade">
+  <div class="container">
+    <h2>大学学的如何</h2>
+    <div class="grade-grid">
+      <div class="grade-item">
+        <h3>大一上</h3>
+        <div class="grade-level">
+          <div class="grade-progress" style="width: 83.6%"></div>
+        </div>
+        <h4>4.18 / 5</h4>
+      </div>
+      <div class="grade-item">
+        <h3>大一下</h3>
+        <div class="grade-level">
+          <div class="grade-progress" style="width: 82.6%"></div>
+        </div>
+        <h4>4.13 / 5</h4>
+      </div>
+      <div class="grade-item">
+        <h3>大二上</h3>
+        <div class="grade-level">
+          <div class="grade-progress" style="width: 89.8%"></div>
+        </div>
+        <h4>4.49 / 5</h4>
+      </div>
+      <div class="grade-item">
+        <h3>大二下</h3>
+        <div class="grade-level">
+          <div class="grade-progress" style="width: 90.8%"></div>
+        </div>
+        <h4>4.54 / 5</h4>
+      </div>
+      <div class="grade-item">
+        <h3>大三上</h3>
+        <div class="grade-level">
+          <div class="grade-progress" style="width: 91.2%"></div>
+        </div>
+        <h4>4.56 / 5</h4>
+      </div>
+      <div class="grade-item">
+        <h3>大三下</h3>
+        <div class="grade-level">
+          <div class="grade-progress" style="width: 0%"></div>
+        </div>
+        <h4>??? / 5</h4>
+      </div>
+      <div class="grade-item">
+        <h3>大四上</h3>
+        <div class="grade-level">
+          <div class="grade-progress" style="width: 0%"></div>
+        </div>
+        <h4>??? / 5</h4>
+      </div>
+      <div class="grade-item">
+        <h3>大四下</h3>
+        <div class="grade-level">
+          <div class="grade-progress" style="width: 0%"></div>
+        </div>
+        <h4>??? / 5</h4>
+      </div>
+      <div class="class-grade">
+        <h3>点击查看主修课程与绩点情况</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <div class="container">
+    <h2>我的项目</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image" id="1"></div>
+        <div class="project-details">
+          <h3>基于知识图谱的大模型智慧教师系统</h3>
+          <p>通过将知识图谱作为知识库导入大模型，利用RAG技术赋能智慧教学。</p>
+          <p>技术栈: LLM、Neo4j、RAG</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image" id="2"></div>
+        <div class="project-details">
+          <h3>图形化BPF交互与容器观测系统</h3>
+          <p>基于eBPF技术，追踪Linux系统一举一动，全生命周期Docker观测与管理</p>
+          <p>技术栈: eBPF、Golang、Docker</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image" id="3"></div>
+        <div class="project-details">
+          <h3>静水流深个人主页</h3>
+          <p>一个直观的个人主页。</p>
+          <p>技术栈: HTML、CSS、JavaScript、eCharts</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 项目详情模态框 -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>项目详情</h2>
+    <p>这里是项目的详细信息。</p>
+  </div>
+</div>
+
+<!-- 主修课程与绩点模态框 -->
+<div id="grade-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <div id="grade-chart" style="width: 100%; height: 400px;"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 谭文轩的个人网站. 保留所有权利.</p>
+    <div class="social-links"></div>
+    <p>邮箱: joeytancn@outlook.com</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
