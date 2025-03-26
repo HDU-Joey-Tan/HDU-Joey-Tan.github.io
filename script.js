@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var projectClose = projectModal.querySelector('.close-button');
 
     // 打开模态框
-    document.querySelectorAll('.modal-trigger .project-details').forEach(function(detail) {
+    document.querySelectorAll('.modal-trigger').forEach(function(detail) {
         detail.addEventListener('click', function() {
             projectModal.style.display = 'block';
             document.body.style.overflow = 'hidden';
