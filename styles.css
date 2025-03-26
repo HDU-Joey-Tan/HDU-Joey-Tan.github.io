@@ -1,4 +1,4 @@
-/* 文件：styles.css */
+
 * {
     margin: 0;
     padding: 0;
@@ -230,7 +230,7 @@ footer {
     color: #3498db;
 }
 
-/* Modal Styles */
+
 .modal {
     display: none;
     position: fixed;
@@ -257,7 +257,7 @@ footer {
     animation: slideIn 0.5s;
 }
 
-/* 修改后的关闭按钮样式 */
+
 .close-button {
     color: white;
     background-color: lightgrey;

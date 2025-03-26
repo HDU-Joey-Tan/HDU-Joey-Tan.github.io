@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 平滑滚动
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // 项目详情模态框逻辑
+
     var projectModal = document.getElementById('project-modal');
     var projectClose = projectModal.querySelector('.close-button');
 
-    // 打开模态框
+
     document.querySelectorAll('.modal-trigger').forEach(function(detail) {
         detail.addEventListener('click', function() {
             projectModal.style.display = 'block';
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // 定义关闭模态框的函数，添加关闭动画
+
     function closeModal(modal) {
         var modalContent = modal.querySelector('.modal-content');
         modal.classList.add('closing');
@@ -35,26 +35,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 通过点击关闭按钮关闭模态框
+
     projectClose.addEventListener('click', function() {
         closeModal(projectModal);
     });
 
-    // 通过点击模态框外部关闭模态框
+
     window.addEventListener('click', function(e) {
         if(e.target === projectModal) {
             closeModal(projectModal);
         }
     });
 
-    // 通过按 Esc 键关闭模态框
+
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && projectModal.style.display === 'block') {
             closeModal(projectModal);
         }
     });
 
-    // 主修课程与绩点模态框逻辑
+
     var gradeModal = document.getElementById('grade-modal');
     var gradeClose = gradeModal.querySelector('.close-button');
     var classGrade = document.querySelector('.class-grade');
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 渲染雷达图
+
     function renderGradeChart() {
         var chartDom = document.getElementById('grade-chart');
         chartDom.style.width = '100%';
